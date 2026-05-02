@@ -1,0 +1,33 @@
+:root {
+  --bg: #080b14;
+
+  --card-blue:   #0d1528;
+  --card-purple: #100d20;
+  --card-green:  #0a1a14;
+  --card-orange: #180f06;
+
+  --border-blue:   #1e3060;
+  --border-purple: #2a1a50;
+  --border-green:  #0d3025;
+  --border-orange: #3a1e08;
+
+  --accent-blue:   #4a8fff;
+  --accent-purple: #9b59ff;
+  --accent-green:  #3fffa2;
+  --accent-orange: #ff8c38;
+
+  --icon-blue:   #1a2d5a;
+  --icon-purple: #1f1040;
+  --icon-green:  #0d2e1e;
+  --icon-orange: #2a1500;
+
+  --text:  #e8eaf2;
+  --muted: #8890a8;
+
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  --gap: 1.25rem;
+  --card-padding: 2rem;
+  --border-radius: 20px;
+}

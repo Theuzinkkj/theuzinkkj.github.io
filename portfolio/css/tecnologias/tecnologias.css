@@ -1,0 +1,135 @@
+body {
+  background-color: #080b14;
+  font-family: 'DM Sans', sans-serif;
+  color: #e8eaf2;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.tec-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 860px;
+}
+
+.back-btn {
+  align-self: flex-start;
+  color: #8890a8;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #e8eaf2;
+}
+
+.tec-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tec-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #fff 0%, #8890a8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tec-subtitle {
+  color: #8890a8;
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
+
+/* Seções por categoria */
+.tec-section {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.tec-section__label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #8890a8;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.tec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.85rem;
+}
+
+/* Card de tecnologia individual */
+.tec-card {
+  background: #0d1528;
+  border: 1px solid #1e3060;
+  border-radius: 14px;
+  padding: 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  text-align: center;
+}
+
+.tec-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Cores de hover por acento */
+.tec-card--blue:hover  { border-color: #4a8fff; box-shadow: 0 0 28px #4a8fff22; }
+.tec-card--orange:hover { border-color: #ff8c38; box-shadow: 0 0 28px #ff8c3822; }
+.tec-card--purple:hover { border-color: #9b59ff; box-shadow: 0 0 28px #9b59ff22; }
+.tec-card--green:hover  { border-color: #3fffa2; box-shadow: 0 0 28px #3fffa222; }
+
+.tec-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tec-card__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.tec-card__icon--blue   { background: #1a2d5a; }
+.tec-card__icon--orange { background: #2a1500; }
+.tec-card__icon--purple { background: #1f1040; }
+.tec-card__icon--green  { background: #0d2e1e; }
+
+.tec-card__name {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.tec-card__level {
+  font-size: 0.75rem;
+  color: #8890a8;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  body { padding: 1.25rem; }
+  .tec-grid { grid-template-columns: repeat(2, 1fr); }
+}

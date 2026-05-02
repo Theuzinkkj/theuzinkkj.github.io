@@ -1,0 +1,111 @@
+.card {
+  border-radius: var(--border-radius);
+  padding: var(--card-padding);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+  border: 1px solid transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  opacity: 0.18;
+  filter: blur(40px);
+  transition: opacity 0.3s;
+}
+
+.card:hover::after {
+  opacity: 0.32;
+}
+
+.card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+
+.card__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.card__title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.card__desc {
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.55;
+  margin-bottom: 1.6rem;
+  max-width: 240px;
+}
+
+.card__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Blue */
+.card--blue { background: var(--card-blue); border-color: var(--border-blue); }
+.card--blue::after { background: var(--accent-blue); }
+.card--blue:hover { border-color: var(--accent-blue); box-shadow: 0 0 40px #4a8fff22; }
+.card--blue .card__icon { background: var(--icon-blue); }
+.card--blue .card__icon svg { stroke: var(--accent-blue); }
+.card--blue .card__btn { border: 1.5px solid var(--accent-blue); color: var(--accent-blue); }
+.card--blue:hover .card__btn { background: var(--accent-blue); color: #fff; }
+
+/* Purple */
+.card--purple { background: var(--card-purple); border-color: var(--border-purple); }
+.card--purple::after { background: var(--accent-purple); }
+.card--purple:hover { border-color: var(--accent-purple); box-shadow: 0 0 40px #9b59ff22; }
+.card--purple .card__icon { background: var(--icon-purple); }
+.card--purple .card__icon svg { stroke: var(--accent-purple); }
+.card--purple .card__btn { border: 1.5px solid var(--accent-purple); color: var(--accent-purple); }
+.card--purple:hover .card__btn { background: var(--accent-purple); color: #fff; }
+
+/* Green */
+.card--green { background: var(--card-green); border-color: var(--border-green); }
+.card--green::after { background: var(--accent-green); }
+.card--green:hover { border-color: var(--accent-green); box-shadow: 0 0 40px #3fffa222; }
+.card--green .card__icon { background: var(--icon-green); }
+.card--green .card__icon svg { stroke: var(--accent-green); }
+.card--green .card__btn { border: 1.5px solid var(--accent-green); color: var(--accent-green); }
+.card--green:hover .card__btn { background: var(--accent-green); color: #000; }
+
+/* Orange */
+.card--orange { background: var(--card-orange); border-color: var(--border-orange); }
+.card--orange::after { background: var(--accent-orange); }
+.card--orange:hover { border-color: var(--accent-orange); box-shadow: 0 0 40px #ff8c3822; }
+.card--orange .card__icon { background: var(--icon-orange); }
+.card--orange .card__icon svg { stroke: var(--accent-orange); }
+.card--orange .card__btn { border: 1.5px solid var(--accent-orange); color: var(--accent-orange); }
+.card--orange:hover .card__btn { background: var(--accent-orange); color: #fff; }

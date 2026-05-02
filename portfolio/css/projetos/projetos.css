@@ -1,0 +1,210 @@
+body {
+  background-color: #080b14;
+  font-family: 'DM Sans', sans-serif;
+  color: #e8eaf2;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.projetos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 860px;
+}
+
+.back-btn {
+  align-self: flex-start;
+  color: #8890a8;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #e8eaf2;
+}
+
+.projetos-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projetos-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #fff 0%, #8890a8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.projetos-subtitle {
+  color: #8890a8;
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
+
+/* Grid de projetos */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  width: 100%;
+}
+
+/* Card de projeto */
+.projeto-card {
+  background: #0d1528;
+  border: 1px solid #1e3060;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.projeto-card:hover {
+  border-color: #4a8fff;
+  box-shadow: 0 0 40px #4a8fff22;
+  transform: translateY(-6px) scale(1.01);
+}
+
+/* Faixa colorida no topo do card */
+.projeto-card__accent {
+  height: 5px;
+  background: linear-gradient(90deg, #4a8fff, #9b59ff);
+}
+
+.projeto-card__body {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+}
+
+/* Badge de categoria */
+.projeto-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #1a2d5a;
+  color: #4a8fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.projeto-card__name {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.projeto-card__desc {
+  color: #8890a8;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+/* Lista de funcionalidades */
+.projeto-card__features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.projeto-card__features-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #8890a8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #c8cfe0;
+}
+
+.feature-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4a8fff;
+  flex-shrink: 0;
+}
+
+/* Tech badges */
+.projeto-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: auto;
+}
+
+.tech-badge {
+  background: #111d35;
+  border: 1px solid #1e3060;
+  color: #8890a8;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.25rem 0.65rem;
+  border-radius: 8px;
+}
+
+/* Botão GitHub */
+.projeto-card__footer {
+  padding: 0 1.8rem 1.8rem;
+}
+
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid #1e3060;
+  color: #e8eaf2;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+  width: 100%;
+  justify-content: center;
+}
+
+.github-btn:hover {
+  border-color: #4a8fff;
+  background: #1a2d5a;
+  color: #4a8fff;
+}
+
+.github-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  body { padding: 1.25rem; }
+  .projetos-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,113 @@
+body {
+  background-color: #080b14;
+  font-family: 'DM Sans', sans-serif;
+  color: #e8eaf2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 860px;
+  position: relative;
+}
+
+.back-btn {
+  align-self: flex-start;
+  color: #8890a8;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #e8eaf2;
+}
+
+.sobre-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sobre-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #fff 0%, #8890a8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sobre-subtitle {
+  color: #8890a8;
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.sobre-card {
+  background: #0d1528;
+  border: 1px solid #1e3060;
+  border-radius: 20px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.sobre-card:hover {
+  border-color: #4a8fff;
+  box-shadow: 0 0 40px #4a8fff22;
+  transform: translateY(-6px) scale(1.02);
+}
+
+.sobre-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #1a2d5a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.sobre-card__icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: #4a8fff;
+}
+
+.sobre-card h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.sobre-card p {
+  color: #8890a8;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  body { padding: 1.25rem; }
+  .sobre-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,91 @@
+.header {
+  background: #0d1528;
+  padding: 2.5rem 2.8rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(37,99,235,0.18);
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  right: 80px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: rgba(37,99,235,0.1);
+}
+
+.header-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: var(--white);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.35rem;
+  position: relative;
+}
+
+.header-contact {
+  color: rgba(255,255,255,0.72);
+  font-size: 13px;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.header-contact span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  position: relative;
+  margin-top: 0.6rem;
+}
+
+.header-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #fff;
+  font-size: 12.5px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.35rem 0.9rem;
+  border: 1.5px solid var(--accent);
+  border-radius: 20px;
+  background: var(--accent);
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s, color 0.2s;
+}
+
+.header-links a:hover {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent), 0 0 22px rgba(37,99,235,0.45);
+}
+
+.header-links a svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex-shrink: 0;
+}

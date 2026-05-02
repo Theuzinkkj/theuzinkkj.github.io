@@ -1,0 +1,22 @@
+@media (max-width: 600px) {
+  .body {
+    padding: 0 1.2rem 2rem;
+  }
+
+  .header {
+    padding: 2rem 1.2rem 1.5rem;
+  }
+
+  .header-name {
+    font-size: 1.6rem;
+  }
+
+  .skills-grid,
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-header {
+    flex-direction: column;
+  }
+}
