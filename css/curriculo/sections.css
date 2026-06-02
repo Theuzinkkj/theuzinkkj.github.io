@@ -31,6 +31,10 @@
   border-radius: 0 6px 6px 0;
 }
 
+.project-card + .project-card {
+  margin-top: 0.75rem;
+}
+
 .project-name {
   font-size: 14px;
   font-weight: 600;

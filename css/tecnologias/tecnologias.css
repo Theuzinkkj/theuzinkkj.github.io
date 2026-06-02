@@ -80,9 +80,11 @@ body {
   border: 1px solid #1e3060;
   border-radius: 14px;
   padding: 1.2rem 1rem;
+  min-height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0.65rem;
   transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
   text-align: center;
@@ -121,6 +123,8 @@ body {
   font-family: 'Syne', sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 
 .tec-card__level {
@@ -132,4 +136,5 @@ body {
 @media (max-width: 600px) {
   body { padding: 1.25rem; }
   .tec-grid { grid-template-columns: repeat(2, 1fr); }
+  .tec-card { min-height: 140px; }
 }

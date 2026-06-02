@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tecnologias – Matheus</title>
-  <meta name="description" content="Tecnologias e ferramentas utilizadas por Matheus de Souza Silva: HTML, CSS, JavaScript, Git, GitHub e Engenharia de Prompt.">
+  <title>Tecnologias - Matheus</title>
+  <meta name="description" content="Tecnologias e ferramentas utilizadas por Matheus de Souza Silva: HTML, CSS, JavaScript, Node.js, Docker, Supabase, Azure, Git, GitHub e Segurança Cibernética.">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
@@ -22,11 +22,9 @@
       <p class="tec-subtitle">Ferramentas e linguagens que utilizo nos meus projetos.</p>
     </header>
 
-    <!-- Frontend -->
     <section class="tec-section">
       <p class="tec-section__label">Frontend</p>
       <div class="tec-grid">
-
         <div class="tec-card tec-card--orange">
           <div class="tec-card__icon tec-card__icon--orange">
             <svg viewBox="0 0 24 24" fill="none" stroke="#ff8c38" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -60,39 +58,109 @@
           <span class="tec-card__name">JavaScript</span>
           <span class="tec-card__level">Alura · 2023</span>
         </div>
-
       </div>
     </section>
 
-    <!-- IA -->
     <section class="tec-section">
-      <p class="tec-section__label">Inteligência Artificial</p>
+      <p class="tec-section__label">Backend</p>
       <div class="tec-grid">
+        <div class="tec-card tec-card--green">
+          <div class="tec-card__icon tec-card__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#3fffa2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3 20 7.5v9L12 21l-8-4.5v-9L12 3z"/>
+              <path d="M12 12 20 7.5"/>
+              <path d="M12 12v9"/>
+              <path d="M12 12 4 7.5"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">Node.js</span>
+          <span class="tec-card__level">Aprendendo</span>
+        </div>
+
+        <div class="tec-card tec-card--blue">
+          <div class="tec-card__icon tec-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4a8fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="3"/>
+              <path d="M7 12h10"/>
+              <path d="M12 7v10"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">APIs REST</span>
+          <span class="tec-card__level">Em prática</span>
+        </div>
+
+        <div class="tec-card tec-card--orange">
+          <div class="tec-card__icon tec-card__icon--orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ff8c38" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">JS Backend</span>
+          <span class="tec-card__level">Node.js</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="tec-section">
+      <p class="tec-section__label">Banco de Dados</p>
+      <div class="tec-grid">
+        <div class="tec-card tec-card--green">
+          <div class="tec-card__icon tec-card__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#3fffa2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6c0-2 4-3 8-3s8 1 8 3-4 3-8 3-8-1-8-3z"/>
+              <path d="M4 6v6c0 2 4 3 8 3s8-1 8-3V6"/>
+              <path d="M4 12v6c0 2 4 3 8 3s8-1 8-3v-6"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">Supabase</span>
+          <span class="tec-card__level">Banco / Auth</span>
+        </div>
+
+        <div class="tec-card tec-card--blue">
+          <div class="tec-card__icon tec-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4a8fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="8" ry="3"/>
+              <path d="M4 5v10c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/>
+              <path d="M4 10c0 1.7 3.6 3 8 3s8-1.3 8-3"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">PostgreSQL</span>
+          <span class="tec-card__level">Base do Supabase</span>
+        </div>
 
         <div class="tec-card tec-card--purple">
           <div class="tec-card__icon tec-card__icon--purple">
             <svg viewBox="0 0 24 24" fill="none" stroke="#9b59ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2a4 4 0 0 1 4 4c0 .34-.04.67-.1 1A4 4 0 0 1 20 11a4 4 0 0 1-2.5 3.7c.32.56.5 1.2.5 1.8a4 4 0 0 1-4 4 4 4 0 0 1-4-4c0-.6.18-1.24.5-1.8A4 4 0 0 1 8 11a4 4 0 0 1 4.1-4c-.06-.33-.1-.66-.1-1a4 4 0 0 1 4-4z"/>
-              <circle cx="12" cy="12" r="2"/>
-              <line x1="12" y1="10" x2="12" y2="6"/>
-              <line x1="14.1" y1="10.9" x2="17" y2="8.5"/>
-              <line x1="9.9" y1="10.9" x2="7" y2="8.5"/>
-              <line x1="14.1" y1="13.1" x2="17" y2="15.5"/>
-              <line x1="9.9" y1="13.1" x2="7" y2="15.5"/>
-              <line x1="12" y1="14" x2="12" y2="18"/>
+              <path d="M4 7h16"/>
+              <path d="M4 12h16"/>
+              <path d="M4 17h10"/>
+              <path d="M8 4v16"/>
+              <path d="M16 4v10"/>
             </svg>
           </div>
-          <span class="tec-card__name">Eng. de Prompt</span>
-          <span class="tec-card__level">Rocketseat · 2026</span>
+          <span class="tec-card__name">SQL</span>
+          <span class="tec-card__level">Consultas e dados</span>
         </div>
-
       </div>
     </section>
 
-    <!-- Ferramentas -->
     <section class="tec-section">
-      <p class="tec-section__label">Ferramentas</p>
+      <p class="tec-section__label">DevOps / Ambiente</p>
       <div class="tec-grid">
+        <div class="tec-card tec-card--blue">
+          <div class="tec-card__icon tec-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4a8fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="10" width="4" height="4"/>
+              <rect x="8" y="10" width="4" height="4"/>
+              <rect x="13" y="10" width="4" height="4"/>
+              <rect x="8" y="5" width="4" height="4"/>
+              <path d="M4 16c1.8 2.5 5 4 9 4 3.5 0 6.3-1.6 8-5"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">Docker</span>
+          <span class="tec-card__level">Aprendendo</span>
+        </div>
 
         <div class="tec-card tec-card--purple">
           <div class="tec-card__icon tec-card__icon--purple">
@@ -115,6 +183,112 @@
           <span class="tec-card__name">GitHub</span>
           <span class="tec-card__level">Repositórios</span>
         </div>
+      </div>
+    </section>
+
+    <section class="tec-section">
+      <p class="tec-section__label">Nuvem Corporativa</p>
+      <div class="tec-grid">
+        <div class="tec-card tec-card--blue">
+          <div class="tec-card__icon tec-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4a8fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.5 18H8a5 5 0 1 1 1-9.9A6 6 0 0 1 20 11a4 4 0 0 1-2.5 7z"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">Azure</span>
+          <span class="tec-card__level">Uso profissional</span>
+        </div>
+
+        <div class="tec-card tec-card--purple">
+          <div class="tec-card__icon tec-card__icon--purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#9b59ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="12" rx="2"/>
+              <path d="M8 20h8"/>
+              <path d="M12 16v4"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">Citrix</span>
+          <span class="tec-card__level">Ambiente corporativo</span>
+        </div>
+
+        <div class="tec-card tec-card--green">
+          <div class="tec-card__icon tec-card__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#3fffa2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3 20 7v5c0 5-3.4 8.5-8 10-4.6-1.5-8-5-8-10V7l8-4z"/>
+              <path d="M8 12h8"/>
+              <path d="M10 16l4-8"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">Zscaler</span>
+          <span class="tec-card__level">Segurança / acesso</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="tec-section">
+      <p class="tec-section__label">Segurança</p>
+      <div class="tec-grid">
+        <div class="tec-card tec-card--green">
+          <div class="tec-card__icon tec-card__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#3fffa2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3 20 7v5c0 5-3.4 8.5-8 10-4.6-1.5-8-5-8-10V7l8-4z"/>
+              <path d="m9 12 2 2 4-5"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">Segurança Cibernética</span>
+          <span class="tec-card__level">Google</span>
+        </div>
+
+        <div class="tec-card tec-card--blue">
+          <div class="tec-card__icon tec-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4a8fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 3"/>
+              <path d="M8 16h8"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">Fundamentos de Segurança</span>
+          <span class="tec-card__level">Boas práticas</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="tec-section">
+      <p class="tec-section__label">Inteligência Artificial</p>
+      <div class="tec-grid">
+        <div class="tec-card tec-card--purple">
+          <div class="tec-card__icon tec-card__icon--purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#9b59ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a4 4 0 0 1 4 4c0 .34-.04.67-.1 1A4 4 0 0 1 20 11a4 4 0 0 1-2.5 3.7c.32.56.5 1.2.5 1.8a4 4 0 0 1-4 4 4 4 0 0 1-4-4c0-.6.18-1.24.5-1.8A4 4 0 0 1 8 11a4 4 0 0 1 4.1-4c-.06-.33-.1-.66-.1-1a4 4 0 0 1 4-4z"/>
+              <circle cx="12" cy="12" r="2"/>
+              <line x1="12" y1="10" x2="12" y2="6"/>
+              <line x1="14.1" y1="10.9" x2="17" y2="8.5"/>
+              <line x1="9.9" y1="10.9" x2="7" y2="8.5"/>
+              <line x1="14.1" y1="13.1" x2="17" y2="15.5"/>
+              <line x1="9.9" y1="13.1" x2="7" y2="15.5"/>
+              <line x1="12" y1="14" x2="12" y2="18"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">Eng. de Prompt</span>
+          <span class="tec-card__level">Rocketseat · 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="tec-section">
+      <p class="tec-section__label">Produtividade</p>
+      <div class="tec-grid">
+        <div class="tec-card tec-card--green">
+          <div class="tec-card__icon tec-card__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#3fffa2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16v16H4z"/>
+              <path d="M8 8l8 8"/>
+              <path d="M16 8l-8 8"/>
+            </svg>
+          </div>
+          <span class="tec-card__name">Excel Avançado</span>
+          <span class="tec-card__level">Planilhas e análise</span>
+        </div>
 
         <div class="tec-card tec-card--blue">
           <div class="tec-card__icon tec-card__icon--blue">
@@ -127,8 +301,6 @@
           <span class="tec-card__name">VS Code</span>
           <span class="tec-card__level">Editor</span>
         </div>
-
-
       </div>
     </section>
 
