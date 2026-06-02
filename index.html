@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Matheus | Dev Portfolio</title>
-  <meta name="description" content="Portfólio de Matheus de Souza Silva, desenvolvedor web focado em HTML, CSS e JavaScript, em transição para desenvolvimento Full Stack.">
+  <title>Matheus | Dev Portfolio</title>
+  <meta name="description" content="Portfólio de Matheus de Souza Silva, desenvolvedor em formação com projetos web, experiência em suporte técnico, cloud corporativa e IA aplicada ao desenvolvimento.">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -15,96 +15,228 @@
   <link rel="stylesheet" href="css/animations.css" />
 </head>
 <body>
-  <main class="container">
+  <div class="site-shell">
+    <nav class="topbar" aria-label="Navegação principal">
+      <a href="#inicio" class="brand">Matheus</a>
+      <div class="topbar__links">
+        <a href="#projetos">Projetos</a>
+        <a href="#stack">Stack</a>
+        <a href="curriculo.html">Currículo</a>
+      </div>
+      <a href="mailto:souzinha1827272@gmail.com" class="topbar__contact">Contato</a>
+    </nav>
 
-    <header class="header">
-      <h1 class="header__title">Matheus</h1>
-      <p class="header__subtitle">Desenvolvedor Full Stack </p>
-    </header>
+    <main>
+      <section class="hero" id="inicio" data-tilt>
+        <div class="hero__content">
+          <span class="eyebrow">Suporte técnico + desenvolvimento web + cloud</span>
+          <h1>Matheus Souza</h1>
+          <p class="hero__headline">Full Stack em formação com foco em React e Next.js</p>
+          <p class="hero__text">
+            Experiência em suporte técnico, cloud corporativa e projetos web com JavaScript, React, Next.js, Supabase, Docker e IA aplicada ao desenvolvimento.
+          </p>
 
-    <div class="grid">
+          <div class="hero__actions">
+            <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+            <a href="curriculo.html" class="btn btn--ghost">Ver currículo</a>
+          </div>
 
-      <a href="projetos.html" class="card card--blue">
-        <div class="card__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
-          </svg>
+          <div class="signal-row" aria-label="Resumo profissional">
+            <div class="signal">
+              <span>2</span>
+              <strong>Projetos em destaque</strong>
+            </div>
+            <div class="signal">
+              <span>Cloud</span>
+              <strong>Azure, Citrix e Zscaler</strong>
+            </div>
+            <div class="signal">
+              <span>IA</span>
+              <strong>Codex, Claude Pro e prompts</strong>
+            </div>
+          </div>
         </div>
-        <h2 class="card__title">Projetos</h2>
-        <p class="card__desc">Veja meus trabalhos, habilidades e tecnologias que utilizo.</p>
-        <span class="card__btn">Ver Projetos →</span>
-      </a>
 
-      <a href="curriculo.html" class="card card--purple">
-        <div class="card__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-            <line x1="10" y1="9" x2="8" y2="9"/>
-          </svg>
+        <aside class="profile-panel" aria-label="Painel de perfil">
+          <div class="profile-card">
+            <div class="profile-card__photo-wrap">
+              <img src="img/foto.jpg" alt="Foto de Matheus de Souza Silva" class="profile-card__photo">
+            </div>
+            <div>
+              <p class="profile-card__role">Dev em formação</p>
+              <h2>Matheus Souza</h2>
+              <p>Web, suporte, cloud e automação com IA.</p>
+            </div>
+          </div>
+
+          <div class="status-board">
+            <div class="status-board__item">
+              <span class="status-dot"></span>
+              Disponível para oportunidades
+            </div>
+            <div class="status-board__item">
+              <span>Atual</span>
+              Analista de Suporte
+            </div>
+            <div class="status-board__item">
+              <span>Foco</span>
+              React e Next.js
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="console-section" aria-label="Explorar perfil">
+        <div class="section-heading">
+          <span class="eyebrow">Explorar perfil</span>
+          <h2>Resumo rápido</h2>
         </div>
-        <h2 class="card__title">Currículo</h2>
-        <p class="card__desc">Confira meu currículo e minha trajetória profissional.</p>
-        <span class="card__btn">Ver Currículo →</span>
-      </a>
 
+        <div class="console" data-tilt>
+          <div class="console__tabs" role="tablist" aria-label="Áreas do perfil">
+            <button class="console-tab is-active" type="button" data-panel="principal">Principal</button>
+            <button class="console-tab" type="button" data-panel="projetos">Projetos</button>
+            <button class="console-tab" type="button" data-panel="cloud">Cloud</button>
+            <button class="console-tab" type="button" data-panel="ia">IA</button>
+          </div>
 
-     <a href="sobre.html" class="card card--green">
-        <div class="card__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="8" r="4"/>
-            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-          </svg>
+          <div class="console__body">
+            <article class="console-panel is-active" data-panel-content="principal">
+              <h3>Perfil em uma frase</h3>
+              <p>Desenvolvedor em formação com foco em React e Next.js, base real em suporte técnico, projetos web e rotina com ferramentas corporativas.</p>
+              <div class="mini-grid">
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Next.js</span>
+                <span>Supabase</span>
+                <span>Docker</span>
+              </div>
+            </article>
+
+            <article class="console-panel" data-panel-content="projetos">
+              <h3>Projetos que mostram prática</h3>
+              <p>Atlas mostra organização financeira com back-end e ambiente Docker. Pokédex mostra consumo de API pública e JavaScript puro.</p>
+              <div class="mini-grid">
+                <span>Atlas</span>
+                <span>Pokédex</span>
+                <span>Fetch API</span>
+                <span>Responsivo</span>
+              </div>
+            </article>
+
+            <article class="console-panel" data-panel-content="cloud">
+              <h3>Vivência corporativa</h3>
+              <p>Contato profissional com Azure, Citrix e Zscaler em contexto de suporte, acesso, ambiente remoto e segurança.</p>
+              <div class="mini-grid">
+                <span>Azure</span>
+                <span>Citrix</span>
+                <span>Zscaler</span>
+                <span>Help Desk</span>
+              </div>
+            </article>
+
+            <article class="console-panel" data-panel-content="ia">
+              <h3>IA como ferramenta de trabalho</h3>
+              <p>Uso Codex, Claude Pro e engenharia de prompt para estudar, revisar código, documentar ideias e acelerar análise técnica.</p>
+              <div class="mini-grid">
+                <span>Codex</span>
+                <span>Claude Pro</span>
+                <span>Prompt</span>
+                <span>Documentação</span>
+              </div>
+            </article>
+          </div>
         </div>
-        <h2 class="card__title">Sobre</h2>
-        <p class="card__desc">Conheça um pouco mais sobre mim e minha trajetória.</p>
-        <span class="card__btn">Ver Sobre →</span>
-    </a>
+      </section>
 
-      <a href="tecnologias.html" class="card card--orange">
-        <div class="card__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="16 18 22 12 16 6"/>
-            <polyline points="8 6 2 12 8 18"/>
-          </svg>
+      <section class="projects-section" id="projetos">
+        <div class="section-heading">
+          <span class="eyebrow">Projetos</span>
+          <h2>Projetos em destaque</h2>
         </div>
-        <h2 class="card__title">Tecnologias</h2>
-        <p class="card__desc">Descubra quais tecnologias eu utilizo em meus projetos.</p>
-        <span class="card__btn">Ver Tecnologias →</span>
-      </a>
 
-    </div>
+        <div class="project-showcase">
+          <article class="project-tile project-tile--featured" data-tilt>
+            <div class="project-tile__top">
+              <span>Principal</span>
+              <a href="https://github.com/Theuzinkkj/finan-as" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <h3>Atlas</h3>
+            <p>Sistema financeiro com interface web, Node.js, Docker e organização de dados para transformar controle de dinheiro em uma experiência mais clara.</p>
+            <div class="tag-row">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Docker</span>
+              <span>Finanças</span>
+            </div>
+          </article>
+
+          <article class="project-tile" data-tilt>
+            <div class="project-tile__top">
+              <span>API pública</span>
+              <a href="https://github.com/Theuzinkkj/Pok-dex" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <h3>Pokédex</h3>
+            <p>Catálogo digital que consome a PokéAPI em tempo real, com busca, dados dinâmicos e layout responsivo.</p>
+            <div class="tag-row">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Fetch API</span>
+              <span>PokéAPI</span>
+            </div>
+          </article>
+        </div>
+
+        <a href="projetos.html" class="section-link">Ver página completa de projetos</a>
+      </section>
+
+      <section class="stack-section" id="stack">
+        <div class="section-heading">
+          <span class="eyebrow">Stack compacta</span>
+          <h2>Stack principal</h2>
+        </div>
+
+        <div class="stack-panel" data-tilt>
+          <div class="stack-filters" aria-label="Filtrar tecnologias">
+            <button type="button" class="stack-filter is-active" data-filter="principal">Principal</button>
+            <button type="button" class="stack-filter" data-filter="dev">Dev</button>
+            <button type="button" class="stack-filter" data-filter="cloud">Cloud</button>
+            <button type="button" class="stack-filter" data-filter="ia">IA</button>
+          </div>
+
+          <div class="stack-cloud">
+            <span data-stack="principal dev">HTML</span>
+            <span data-stack="principal dev">CSS</span>
+            <span data-stack="principal dev">JavaScript</span>
+            <span data-stack="principal dev">React</span>
+            <span data-stack="principal dev">Next.js</span>
+            <span data-stack="dev">Node.js</span>
+            <span data-stack="principal dev">Docker</span>
+            <span data-stack="principal dev">Supabase</span>
+            <span data-stack="dev">PostgreSQL</span>
+            <span data-stack="dev">Git/GitHub</span>
+            <span data-stack="principal cloud">Azure</span>
+            <span data-stack="cloud">Citrix</span>
+            <span data-stack="cloud">Zscaler</span>
+            <span data-stack="principal ia">Codex</span>
+            <span data-stack="ia">Claude Pro</span>
+            <span data-stack="ia">Eng. de Prompt</span>
+          </div>
+        </div>
+
+        <a href="tecnologias.html" class="section-link">Ver todas as tecnologias</a>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__links">
-        <a href="mailto:souzinha1827272@gmail.com" class="footer__item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="4" width="20" height="16" rx="2"/>
-            <path d="m2 7 10 7 10-7"/>
-          </svg>
-          souzinha1827272@gmail.com
-        </a>
-        <span class="footer__sep">|</span>
-        <a href="https://github.com/Theuzinkkj" target="_blank" rel="noopener" class="footer__item">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/>
-          </svg>
-          github.com/Theuzinkkj
-        </a>
-        <span class="footer__sep">|</span>
-        <a href="https://linkedin.com/in/matheus-souza-9a89b2260" target="_blank" rel="noopener" class="footer__item">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-          </svg>
-          linkedin.com/in/matheus-souza
-        </a>
+        <a href="mailto:souzinha1827272@gmail.com" class="footer__item">souzinha1827272@gmail.com</a>
+        <a href="https://github.com/Theuzinkkj" target="_blank" rel="noopener" class="footer__item">github.com/Theuzinkkj</a>
+        <a href="https://linkedin.com/in/matheus-souza-9a89b2260" target="_blank" rel="noopener" class="footer__item">LinkedIn</a>
       </div>
-      <p class="footer__copy">© 2026 Matheus de Souza — Todos os direitos reservados.</p>
+      <p class="footer__copy">© 2026 Matheus de Souza</p>
     </footer>
-
-  </main>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
